@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             >
+    <Color x:Key="DarkBlue">#212B43</Color>
+    <Color x:Key="LightBlue">#8A8BA6</Color>
+    <Style Class="DarkBlue" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource DarkBlue}"/>
+    </Style>
+    <Style Class="LightBlue" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource LightBlue}"/>
+    </Style>
+    <Style Class="Header" TargetType="Label">
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="FontSize" Value="Title"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+    </Style>
+    <Style Class="SubHeader" TargetType="Label">
+        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+    </Style>
+    <Style Class="CardTitle" TargetType="Label">
+        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+    </Style>
+    <Style TargetType="RoundRectangle">
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Fill" Value="White"/>
+    </Style>
+    <Style x:Key="Task" TargetType="Entry">
+        <Setter Property="FontSize" Value="Large"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="PlaceholderColor" Value="{Binding LightBlue}"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+    </Style>
+    <Style x:Key="CircularButton" TargetType="Button">
+        <Setter Property="FontSize" Value="Large"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="HeightRequest" Value="75"/>
+        <Setter Property="VerticalOptions" Value="End"/>
+        <Setter Property="WidthRequest" Value="75"/>
+        <Setter Property="BackgroundColor" Value="CadetBlue"/>
+        <Setter Property="HorizontalOptions" Value="End"/>
+        <Setter Property="CornerRadius" Value="50"/>
+    </Style>
+</ResourceDictionary>
